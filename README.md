@@ -101,7 +101,6 @@ These workflows were designed and implemented in n8n to orchestrate the backend 
 - Generate downloadable PDF summaries
 - AI medical chatbot connected to WHO knowledge
 - Automated backend powered by n8n workflows
-- Responsive React user interface
   
 ## Skills Demonstrated
 
@@ -128,7 +127,7 @@ medical-diagnostics-ai/
 │   │   ├── FileUploadSection.tsx   # PDF upload + question form
 │   │   ├── ChatbotSection.tsx      # Floating chat widget
 │   │   ├── ResultDisplay.tsx       # Renders the analysis result
-│   │   └── Navigation.tsx          # Nav bar (routes not yet implemented)
+│   │   └── Navigation.tsx          # to about us , contact
 │   ├── hooks/
 │   │   ├── use-mobile.tsx
 │   │   └── use-toast.ts
@@ -160,7 +159,7 @@ medical-diagnostics-ai/
 ## Prerequisites
 
 - Node.js 18+ and npm
-- [n8n](https://docs.n8n.io/) running locally (`npx n8n` ), with two workflows active:
+- [n8n](https://docs.n8n.io/) running locally ('npx n8n' ou 'n8n start' ), with two workflows active:
   - a webhook at `/webhook/medical-summary` that accepts a PDF (`multipart/form-data`) and a question, and returns `{ output: string }`
   - a webhook at `/webhook/medical-questions` that accepts `{ question: string }` and returns a similar response, backed by a knowledge base of WHO medical data
 
@@ -189,7 +188,6 @@ n8n start
 npm run dev
 ```
 
-The app runs on `http://localhost:8080` (or the port Vite assigns) and expects n8n on `http://localhost:5678` by default.
 
 ## Environment Variables
 
