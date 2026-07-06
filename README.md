@@ -102,7 +102,7 @@ These workflows were designed and implemented in n8n to orchestrate the backend 
 - AI medical chatbot connected to WHO knowledge
 - Automated backend powered by n8n workflows
 - Responsive React user interface
-- 
+  
 ## Skills Demonstrated
 
 - React & TypeScript
@@ -113,8 +113,7 @@ These workflows were designed and implemented in n8n to orchestrate the backend 
 - PDF Processing
 - Frontend Development
 - AI-powered Applications
-- 
-- 
+  
 ## Project Structure
 
 ```
