@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Medical soft pink background */
+    --background: 340 100% 98%;
+    --foreground: 0 0% 23%;
+
+    /* Cards with slight tint */
+    --card: 340 60% 97%;
+    --card-foreground: 0 0% 23%;
+
+    --popover: 340 100% 98%;
+    --popover-foreground: 0 0% 23%;
+
+    /* Teal/mint primary color */
+    --primary: 168 45% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Rose pink secondary for buttons */
+    --secondary: 345 45% 68%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted mint backgrounds */
+    --muted: 168 35% 95%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent teal */
+    --accent: 168 45% 85%;
+    --accent-foreground: 168 45% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Soft borders */
+    --border: 168 25% 85%;
+    --input: 168 25% 90%;
+    --ring: 168 45% 55%;
+
+    --radius: 0.75rem;
+    
+    /* Custom medical theme tokens */
+    --medical-pink: 340 100% 98%;
+    --medical-teal: 168 45% 55%;
+    --medical-rose: 345 45% 68%;
+    --medical-mint-light: 168 35% 95%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 168 45% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 345 45% 68%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 168 45% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 168 45% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
