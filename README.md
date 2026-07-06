@@ -25,9 +25,9 @@ The React frontend handles the user interface, while n8n acts as the backend orc
 ![Document Analysis , Medical Chatbot](images/home2.png)
 
 
-![About-page](images/About page.png)
+![About page](images/About-page.png)
 
-![Contact-page ](images/Contact page.png)
+![Contact page ](images/Contact-page.png)
 
 
 ## Architecture
